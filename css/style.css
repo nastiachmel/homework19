@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+@font-face{
+  font-family: 'bebasneue-light';
+  font-style: normal;
+  font-weight: normal;
+  src:url('../font/bebasneue_light-webfont.eot?-fvbane');
+  src: url('../font/bebasneue_light-webfont.woff'),
+  url('../font/bebasneue_light-webfont.woff2');
+}
+
+@font-face{
+  font-family: 'bebasneue';
+  font-style: normal;
+  font-weight: normal;
+  src:url('../font/bebasneue_regular-webfont.eot?-fvbane');
+  src:
+  url('../font/bebasneue_regular-webfont.woff2'),
+  url('../font/bebasneue_regular-webfont.woff');
+}
+@font-face{
+  font-family: 'bebasneue';
+  font-style: normal;
+  font-weight: bold;
+  src:url('../font/bebasneue_bold-webfont.eot?-fvbane');
+  src: 
+  url('../font/bebasneue_bold-webfont.woff2'),
+  url('../font/bebasneue_bold-webfont.woff');
+}
+@font-face{
+  font-family: 'bebasneue-thin';
+  font-style: normal;
+  font-weight: 300;
+  src:url('../font/bebasneue_thin-webfont.eot?-fvbane');
+  src:
+  url('../font/bebasneue_thin-webfont.woff'),
+  url('../font/bebasneue_thin-webfont.woff2');
+ 
+  
+}
+@font-face {
+	font-family: 'themify';
+	src:url('../font/themify.eot?-fvbane');
+	src:url('../font/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+	url('../font/themify.woff?-fvbane') format('woff'),
+	url('../font/themify.ttf?-fvbane') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+ background-color: #9789f9;
+}
+/* Layout */
+.ba-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+.ba-button{
+  display: inline-block;
+  border: none;
+  background-color: #6fcffb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'bebasneue';
+  padding:  20px 50px; 
+  border-radius: 27px;
+  line-height: 15px; 
+  position: relative;
+  top: 25px;
+  cursor: pointer;
+  behavior: url(PIE.htc);
+}
+.ba-button--fix{
+  background-color: #fd8d7b;
+  top: -6px;
+}
+.ba-button:hover{
+  background-color: #3bace0;
+}
+.ba-button--fix:hover{
+  background-color: rgb(227, 50, 22);
+}
+.ba-pricing{
+  margin: 0 -11px;
+  display: flex;
+  text-align: center;
+}
+.ba-pricing__col{
+  padding: 0 11px;
+  flex-grow: 1;
+  width: 320px;
+  position: relative;
+}
+.ba-pricing__col--center{
+  width: 370px;
+  z-index: 1;
+  top: -40px;  
+}
+.ba-price__foot-text{
+  font-family: 'Roboto', sans-serif;
+  color: #a9a9a9;
+  font-size: 11px;
+  font-weight: 300;
+  padding-bottom: 28px;
+}
+.ba-price{
+  padding-top: 30px;  
+  background-image: url(../img/bgnew.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  behavior: url(background-size.htc);
+}
+.ba-price__bg--fix { 
+  behavior: url(background-size.htc);  
+}
+.ba-price--fix{
+  position: relative;
+}
+.ba-price__img{ 
+  position: absolute;
+  display: block;
+  top: 13px;
+  margin: 0;
+  margin-bottom: -18px;
+  right: -80px;
+}
+.ba-price__dol{
+  font-size: 24px;
+  font-family: 'bebasneue-thin';
+  top: -1.1em;
+}
+.ba-price__rate{
+  font-family: 'bebasneue-thin';
+  font-size: 60px;
+  display: inline;
+  font-weight: 300;
+}
+.ba-price__hour{
+  font-size: 16px;
+  font-family: 'bebasneue-light';
+}
+.ba-price__position{
+  font-family: 'bebasneue';
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 65px;
+  margin: 0;
+  padding-top: 10px;
+
+}
+.ba-price__position--fix{
+  padding-bottom: 85px;
+}
+.ti-paint-bucket,
+.ti-palette,
+.ti-hummer{
+  font-family: 'themify';
+  font-size: 30px;
+}
+.ti-paint-bucket:before {
+  content: "\e61f";
+}
+.ti-palette:before {
+	content: "\e6e0";
+}
+.ti-hummer:before {
+	content: "\e69a";
+}
+.ba-price__body{
+  padding-top: 20px;
+}
+.ba-price__body--fix{
+  margin-top: 15px;
+}
+.ba-price__list{
+  list-style: none;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+.ba-price__list--fix{
+  margin-bottom: 20px;
+}
+.ba-price__item{
+  padding-bottom: 45px;
+  max-width: 141px;
+  margin: 0 auto;
+}
+.ba-price__item--fix{
+  max-width: 180px;
+}
+
+@media screen and (max-width:425px){
+.ba-container{
+  padding-top: 10px;
+}
+.ba-pricing{
+  flex-direction: column;
+  align-items: center;
+}
+.ba-pricing__col{
+  margin-bottom: 88px;
+}
+.ba-pricing__col--center{
+  margin-bottom: 0;
+}
+.ba-price__img{
+  left: 196px;
+}
+}

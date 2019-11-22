@@ -1,0 +1,22 @@
+.ie8 .ba-pricing__col{
+  display: inline-block;
+  width: 33.33%;
+  box-sizing: border-box;
+  font-size: medium;
+}
+.ie8 .ba-pricing{
+  font-size: 0;
+}
+.ie8 .ba-pricing__col--center{
+  top: 30px;
+}
+
+.ie8 .ba-price__body--fix{
+  margin-top: 8px;
+}
+.ie8 .ba-pricing__col--center{
+  max-width: 320px;
+}
+.ie8 .ba-pricing__col{
+  max-width: 320px;
+}
